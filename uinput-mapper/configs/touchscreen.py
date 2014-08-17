@@ -8,8 +8,8 @@ sres = sres[1].split(" @")
 sres = sres[0].split("x")
 xsres = int(sres[0])
 ysres = int(sres[1])
-xmres = 1280
-ymres = 720
+xmres = 720
+ymres = 576
 
 if xsres >= xmres:
     xsres = xmres
