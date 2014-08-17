@@ -20,7 +20,7 @@ if [ ! -f /etc/pointercal ]; then
 	echo "Please follow the instructions on the display..."
 	ts_calibrate
 	echo "Getting uimapper..."
-	wget --no-check -O uimapper.tar.gz "https://github.com/brantje/xbian-touch/raw/master/uimapper.tar.gz"
+	wget --no-check -O uimapper.tar.gz "https://github.com/Schlump/raspbmc-touch/raw/master/uimapper.tar.gz"
 	echo "Installing uimapper..."
 	sudo mkdir -p /scripts && sudo tar -zxf uimapper.tar.gz  -C /scripts
 
