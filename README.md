@@ -2,6 +2,16 @@ Script based on https://github.com/brantje/xbian-touch
 
 works for xbian, trying to make it work on raspbmc
 
+
+Open a ssh connection to xbian
+Then type:
+
+wget https://github.com/Schlump/raspbmc-touch/raw/master/install.sh
+
+
+
+
+
 Original Readme:
 ===How To Install===
 
