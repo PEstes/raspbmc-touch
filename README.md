@@ -6,7 +6,7 @@ works for xbian, trying to make it work on raspbmc
 Open a ssh connection to raspbmc
 Then type:
 
-wget https://github.com/Schlump/raspbmc-touch/raw/master/install.sh
+wget --no-check-certitifacte https://github.com/Schlump/raspbmc-touch/raw/master/install.sh
 
 
 
