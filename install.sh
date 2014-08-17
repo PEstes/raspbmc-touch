@@ -33,7 +33,7 @@ if [ ! -f /etc/pointercal ]; then
 	env UIMAPPER_CONF=\"configs/touchscreen.py\"
 	env UIMAPPER_DIR=\"/scripts/uinput-mapper\"
 
-	start on (input-device-added SUBSYSTEM=input)
+	start on startup or virtual-filesystems or (input-device-added SUBSYSTEM=input)
 
 	stop on input-device-removed
 
