@@ -2,14 +2,14 @@ from uinputmapper.cinput import *
 import subprocess
 
 #Read screen resolution from tvservice (not framebuffer)
-sres = subprocess.check_output("tvservice -s", shell=True)
+sres = subprocess.check_output("“/opt/vc/bin/tvservice -s", shell=True)
 sres = sres.split(", ")
 sres = sres[1].split(" @")
 sres = sres[0].split("x")
 xsres = int(sres[0])
 ysres = int(sres[1])
-xmres = 720
-ymres = 576
+xmres = 1280
+ymres = 720
 
 if xsres >= xmres:
     xsres = xmres
