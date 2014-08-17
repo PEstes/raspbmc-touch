@@ -1,6 +1,6 @@
 Script based on https://github.com/brantje/xbian-touch
 
-works for xbian, trying to make it work on raspbmc with Sainsmart 7" touchscreen
+works for xbian, trying to make it work on raspbmc with Sainsmart 7" touchscreen @ 720 x 576
 
 
 Open a ssh connection to raspbmc
