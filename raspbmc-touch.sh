@@ -61,10 +61,6 @@ fi
     sudo start uimapper
     sudo start xbmc
     echo "Installation done!"
-    echo "system going down for restart"
-    sleep 5
-    sudo reboot
-    
     
     
       else
