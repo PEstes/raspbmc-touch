@@ -9,7 +9,7 @@ Install notes:
 - get you'r fresh copy from http://www.raspbmc.com/download/
 - fire it up and let the raspbmc do its upgrade work (takes a while)
 - do apt-get update and apt-get upgrade (just to be sure everything is up do date)
-- when everything is done and xbmc is up start with calibrating the touchscreen
+- when everything is done and xbmc is up, start with calibrating the touchscreen
 
 
 Open a ssh connection to raspbmc
