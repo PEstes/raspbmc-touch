@@ -77,5 +77,5 @@ fi
       ts_calibrate
       sudo start uimapper
       sudo start xbmc
-    fi
+    
 fi
