@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "toubleshooting touchscreen calibration"
-if [ ! -f /etc/pointercal ]; then
+if [ -f /etc/pointercal ]; then
 echo "downloading & installing evtest"
 sudo apt-get install evtest
 echo "running  evtest, if uimapper is running there should be an entry called "uimapper - touchscreen"
