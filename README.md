@@ -23,7 +23,7 @@ sudo sh raspbmc-touch.sh
 
 
 ---------------
-if you want to recalibrate just raspbmc-touch.sh again
+if you want to recalibrate just run raspbmc-touch.sh again
 
 
 ---------------------------------------------------------------------------------------------------
