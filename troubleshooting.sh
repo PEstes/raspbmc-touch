@@ -5,9 +5,11 @@ echo "downloading & installing evtest"
 sudo apt-get install evtest
 echo "running  evtest"
 
+sudo evtest
+
 echo "if uimapper is running there should be an entry called ""uimapper - touchscreen"
 
-evtest
+
 
 echo "if theres no uimapper present -> uimapper is not starting right"
 echo "if theres no touchscreen present check your usb cable, maybe switch ports"
