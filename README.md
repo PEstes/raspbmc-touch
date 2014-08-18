@@ -15,11 +15,11 @@ Install notes:
 Open a ssh connection to raspbmc
 Then type:
 
-wget --no-check-certificate https://github.com/Schlump/raspbmc-touch/raw/master/install.sh
+wget --no-check-certificate https://github.com/Schlump/raspbmc-touch/raw/master/raspbmc-touch.sh
 
 after installation is done type:
 
-sudo sh install.sh 
+sudo sh raspbmc-touch.sh 
 
 
 ---------------------------------------------------------------------------------------------------
