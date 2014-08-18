@@ -22,6 +22,10 @@ after installation is done type:
 sudo sh raspbmc-touch.sh 
 
 
+---------------
+if you want to recalibrate just raspbmc-touch.sh again
+
+
 ---------------------------------------------------------------------------------------------------
 
 Thanks to branjte (https://github.com/brantje/xbian-touch) and  markamc (http://markamc.traki-iski.co.uk/)
