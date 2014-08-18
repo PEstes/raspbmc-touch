@@ -17,6 +17,10 @@ Then type:
 
 wget --no-check-certificate https://github.com/Schlump/raspbmc-touch/raw/master/install.sh
 
+after installation is done type:
+
+sudo sh install.sh 
+
 
 ---------------------------------------------------------------------------------------------------
 
