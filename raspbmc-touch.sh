@@ -13,7 +13,6 @@ then
   ls 
   echo "now there should be a symlink to touchscreen"
 
-else
 
   if [ ! -f /etc/pointercal ]; 
   then
