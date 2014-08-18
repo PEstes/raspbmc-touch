@@ -60,6 +60,12 @@ fi
     sudo start uimapper
     sudo start xbmc
     echo "Installation done!"
+    echo "system going down for restart"
+    sleep 5
+    sudo reboot
+    
+    
+    
       else
       echo "Already installed... Recalibrating"
       read inputnumber
@@ -77,8 +83,6 @@ fi
       ts_calibrate
       sudo start uimapper
       sudo start xbmc
-      echo "System going down for reboot - after that enjoy your touchscreen"
-      sleep 5
-      sudo reboot
+
     
 fi
