@@ -77,5 +77,8 @@ fi
       ts_calibrate
       sudo start uimapper
       sudo start xbmc
+      echo "System going down for reboot - after that enjoy your touchscreen"
+      sleep 5
+      sudo reboot
     
 fi
