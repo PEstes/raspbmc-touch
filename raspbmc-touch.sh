@@ -8,10 +8,11 @@ then
 
   echo "Moving file..."
   sudo mv 95egalax.rules /etc/udev/rules.d/
-  sudo reload udev
+  udevadm trigger
   cd /dev/input
   ls 
   echo "now there should be a symlink to touchscreen"
+  sleep 3
 fi
 
   if [ ! -f /etc/pointercal ]; 
