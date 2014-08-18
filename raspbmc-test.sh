@@ -18,7 +18,7 @@ fi
   then
     sudo stop xbmc
     echo "Getting tslib"
-    wget --no-check -O tslib_1-1_armhf.deb "https://github.com/Schlump/raspbmc-touch/blob/master/tslib_1-1_armhf.deb"
+    wget --no-check -O tslib_1-1_armhf.deb "https://github.com/Schlump/raspbmc-touch/raw/master/tslib_1-1_armhf.deb"
     echo "Installing tslib"
     dpkg -i tslib_1-1_armhf.deb
     export LD_LIBRARY_PATH=/usr/local/lib
