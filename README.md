@@ -1,6 +1,14 @@
-Script based on https://github.com/brantje/xbian-touch
+--  Script based on https://github.com/brantje/xbian-touch -- 
 
-works for xbian, trying to make it work on raspbmc with Sainsmart 7" touchscreen @ 720 x 576
+
+-- works for xbian, trying to make it work on raspbmc with Sainsmart 7" touchscreen @ 720 x 576 --
+
+---------------------------------------------------------------------------------------------------
+Install notes:
+
+- get you'r fresh copy from http://www.raspbmc.com/download/
+- fire it up and let the raspbmc do its upgrade work (takes a while)
+- when everything is done and xbmc is up start with calibrating the touchscreen
 
 
 Open a ssh connection to raspbmc
@@ -9,23 +17,7 @@ Then type:
 wget --no-check-certificate https://github.com/Schlump/raspbmc-touch/raw/master/install.sh
 
 
+---------------------------------------------------------------------------------------------------
 
-
-
-Original Readme:
-===How To Install===
-
-Open a ssh connection to xbian
-Then type:
-
-wget https://github.com/brantje/xbian-touch/raw/master/install.sh
-
-After download is complete type:
-sudo sh install.sh
-
-
-root pw is raspberry
-
-And follow the instructions on screen.
-
-Enjoy!
+Thanks to branjte (https://github.com/brantje/xbian-touch) and  markamc (http://markamc.traki-iski.co.uk/)
+as 99% of the work in this script is from them, i just changed a few lines for raspbmc compability.
