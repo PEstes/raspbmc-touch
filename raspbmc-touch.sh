@@ -65,7 +65,6 @@ fi
     
       else
       echo "Already installed... Recalibrating"
-      read inputnumber
       sudo stop xbmc
       sudo stop uimapper
       export LD_LIBRARY_PATH=/usr/local/lib
