@@ -6,9 +6,9 @@ echo "Based on XBian touch installer by brantje edited by Schlump for raspbmc"
 echo "Listing event devices"
 ls -l /dev/input/by-id | grep event
 echo "What is the event number of the touchscreen? eg: event0 then you type 0, followed by [ENTER]"
-read inputnumber
+read inputNumber
 
-sudo udevadm info --name= /dev/input/$inputNumber | grep name
+sudo udevadm info --name= /dev/input/$inputNumber --attribute-walk| grep name
 echo "Write down the exact name of the touchscreen and type [ENTER]"
 read name
 
