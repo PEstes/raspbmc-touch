@@ -4,8 +4,7 @@ then
   echo "Based on XBian touch installer by brantje edited by Schlump for raspbmc"
 
   echo "Generating udev rule"
-  echo "SUBSYSTEM==\"input\", ATTRS{name}==\"*eGalax Inc. USB TouchController*\",  ENV{DEVNAME}==\"*event*\", SYMLINK+=\"input/touchscreen\"" >> 95egalax.rules
-
+  echo "KERNEL==\"event*\", SUBSYSTEM==\"input\", SYSFS{idVendor}==\"0eef\", SYSFS{idProduct}==\"0001\", SYMLINK+=\"input/touchscreen\"" >> 95egalax.rules
   echo "Moving file..."
   sudo mv 95egalax.rules /etc/udev/rules.d/
   udevadm trigger
