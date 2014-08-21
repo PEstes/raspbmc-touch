@@ -1,6 +1,6 @@
 #!/bin/bash
-if [ ! -f /etc/udev/rules.d/95egalax.rules ];
-then
+#if [ ! -f /etc/udev/rules.d/95egalax.rules ];
+#then
 echo "Based on XBian touch installer by brantje edited by Schlump for raspbmc"
 
 echo "Listing event devices"
