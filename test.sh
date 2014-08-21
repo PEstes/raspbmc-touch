@@ -9,14 +9,16 @@ echo "What is the event number of the touchscreen? eg: event0 then you type 0, f
 read inputNumber
 
 sudo udevadm info --name= /dev/input/$inputNumber | grep name
+echo "Write down the exact name of the touchscreen and type [ENTER]"
 read name
+
 echo name
 fi
    
 
 
 #echo "Generating udev rule"
-#echo "SUBSYSTEM==\"input\", ATTRS{product}==\"*USB TouchController*\", ENV{DEVNAME}==\"*event*\", SYMLINK+=\"input/touchscreen\"" >> 95egalax.rules
+#echo "SUBSYSTEM==\"input\", ATTRS{product}==\"*$name*\", ENV{DEVNAME}==\"*event*\", SYMLINK+=\"input/touchscreen\"" >> 95egalax.rules
 #echo "Moving file..."
 #sudo mv 95touchscreen.rules /etc/udev/rules.d/
 #udevadm trigger
