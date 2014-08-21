@@ -8,7 +8,8 @@ ls -l /dev/input/by-id | grep event
 echo "What is the event number of the touchscreen? eg: event0 then you type 0, followed by [ENTER]"
 read inputNumber
 
-sudo udevadm info --name=/dev/input/event$inputNumber --attribute-walk | grep -m 1 name
+devices = sudo udevadm info --name=/dev/input/event$inputNumber --attribute-walk 
+grep -m 1 name <<< $devices
 echo "Write down the exact name of the touchscreen and type [ENTER]"
 read name
 
