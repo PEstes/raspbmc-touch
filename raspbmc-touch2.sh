@@ -4,7 +4,7 @@ then
   echo "Based on XBian touch installer by brantje edited by Schlump for raspbmc"
 
   echo "Generating udev rule"
-  echo "KERNEL==\"event*\", SUBSYSTEM==\"input\", SYSFS{idVendor}==\"0eef\", SYSFS{idProduct}==\"0001\", SYMLINK+=\"input/touchscreen\"" >> 95egalax.rules
+  echo "KERNEL==\"event*\", SUBSYSTEM==\"input\", ATTRS{idVendor}==\"0eef\", ATTRS{configuration}==\"USB TouchScreen\", SYMLINK+=\"input/touchscreen\"" >> 95egalax.rules
   echo "Moving file..."
   sudo mv 95egalax.rules /etc/udev/rules.d/
   udevadm trigger
@@ -13,6 +13,7 @@ then
   echo "now there should be a symlink to touchscreen"
   sleep 3
 fi
+ 
 
   if [ ! -f /etc/pointercal ]; 
   then
