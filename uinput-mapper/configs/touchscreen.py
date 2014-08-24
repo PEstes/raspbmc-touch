@@ -7,7 +7,7 @@ sres = sres.split(", ")
 sres = sres[1].split(" @")
 sres = sres[0].split("x")
 xsres = int(sres[0])
-ysres = int
+ysres = int(sres[1])
 # changed res because with default settings it didn't work for me
 xmres = 720
 ymres = 576
