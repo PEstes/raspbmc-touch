@@ -53,6 +53,9 @@ fi
     end script
     respawn" >> uimapper.conf
     echo "Moving config..."
+    echo "Adding stuff too /boot/config.txt"
+    echo "hdmi_group=1"  >> /boot/config.txt
+    echo "hdmi_mode=5"  >> /boot/config.txt
     sudo mv uimapper.conf /etc/init
     sudo chmod +x /scripts/uinput-mapper/input-create.py
     sudo chmod +x /scripts/uinput-mapper/input-read.py
