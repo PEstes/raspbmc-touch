@@ -3,7 +3,7 @@
 
 --now it works on raspbmc with Sainsmart 7" (eGalax) touchscreen @ 1920 x 1080 --
 
--- set res in xbmc to 1920 x 1080 ( system -> settings -> system -> video output)
+-- set res in xbmc to 1920 x 1080 ( system -> settings -> system -> video output) --
 
 ---------------------------------------------------------------------------------------------------
 Install notes:
