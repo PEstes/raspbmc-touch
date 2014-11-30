@@ -1,5 +1,5 @@
 #!/bin/bash
-if [ ! -f  /etc/udev/rules.d/95egalax.rules ]; 
+if [ ! -f  /etc/udev/rules.d/95egalax.rules ];
 then
   echo "Based on XBian touch installer by brantje edited by Schlump for raspbmc"
 
@@ -10,13 +10,13 @@ then
   udevadm trigger
   sleep 3
   cd /dev/input
-  ls 
+  ls
   echo "now there should be a symlink to touchscreen"
   sleep 3
 fi
- 
 
-  if [ ! -f /etc/pointercal ]; 
+
+  if [ ! -f /etc/pointercal ];
   then
     sudo stop xbmc
     echo "Getting tslib"
@@ -62,8 +62,8 @@ fi
     sudo start uimapper
     sudo start xbmc
     echo "Installation done!"
-    
-    
+
+
       else
       echo "Already installed... Recalibrating"
       sudo stop xbmc
@@ -81,5 +81,5 @@ fi
       sudo start uimapper
       sudo start xbmc
 
-    
+
 fi
