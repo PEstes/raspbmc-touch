@@ -2,7 +2,7 @@ from uinputmapper.cinput import *
 mport subprocess
 
 #Read screen resolution from tvservice (not framebuffer)
-sres = subprocess.check_output("tvservice -s", shell=True)
+sres = subprocess.check_output("/opt/vc/bin/tvservice -s", shell=True)
 sres = sres.split(", ")
 sres = sres[1].split(" @")
 sres = sres[0].split("x")

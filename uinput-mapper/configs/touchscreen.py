@@ -7,10 +7,10 @@ sres = sres.split(", ")
 sres = sres[1].split(" @")
 sres = sres[0].split("x")
 xsres = int(sres[0])
-ysres = int
+ysres = int(sres[1])
 # changed res because with default settings it didn't work for me
-xmres = 720
-ymres = 576
+xmres = 1280
+ymres = 720
 
 if xsres >= xmres:
     xsres = xmres
@@ -77,8 +77,8 @@ config = {
             },
             ABS_Y : {
                 'type' : (0, EV_ABS),
-                'code' : Y_ABS, 
-                'value' : y_value, 
+                'code' : Y_ABS,
+                'value' : y_value,
                 'prop' : {
                     'max' : 2047,
                     'min' : 0,
@@ -112,7 +112,7 @@ def config_merge(c):
             c[k] = v
 
     # Uncomment this to make touch click too
-    
+
     #c[(0, EV_KEY)][BTN_RIGHT] = {
     #        'type' : (0, EV_KEY),
     #        'code' : BTN_RIGHT,
