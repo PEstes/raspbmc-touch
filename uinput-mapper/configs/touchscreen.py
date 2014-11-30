@@ -9,8 +9,8 @@ sres = sres[0].split("x")
 xsres = int(sres[0])
 ysres = int(sres[1])
 # changed res because with default settings it didn't work for me
-xmres = 1280
-ymres = 720
+xmres = 1920
+ymres = 1080
 
 if xsres >= xmres:
     xsres = xmres

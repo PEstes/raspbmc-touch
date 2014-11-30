@@ -1,7 +1,9 @@
---  Script based on https://github.com/brantje/xbian-touch -- 
+--  Script based on https://github.com/brantje/xbian-touch --
 
 
---now it works on raspbmc with Sainsmart 7" (eGalax) touchscreen @ 720 x 576 --
+--now it works on raspbmc with Sainsmart 7" (eGalax) touchscreen @ 1920 x 1080 --
+
+-- set res in xbmc to 1920 x 1080 ( system -> settings -> system -> video output)
 
 ---------------------------------------------------------------------------------------------------
 Install notes:
@@ -19,7 +21,7 @@ wget --no-check-certificate https://github.com/Schlump/raspbmc-touch/raw/master/
 
 after installation is done type:
 
-sudo sh raspbmc-touch.sh 
+sudo sh raspbmc-touch.sh
 
 
 ---------------
