@@ -70,22 +70,22 @@ fi
       echo "Installation done!"
 
 
-      else
-      echo "Already installed... Recalibrating"
-      sudo stop kodi
-      sudo stop uimapper
-      export LD_LIBRARY_PATH=/usr/local/lib
-      export TSLIB_CONSOLEDEVICE=none
-      export TSLIB_FBDEVICE=/dev/fb0
-      export TSLIB_TSDEVICE=/dev/input/touchscreen
-      export TSLIB_CALIBFILE=/etc/pointercal
-      export TSLIB_CONFFILE=/usr/local/etc/ts.conf
-      export TSLIB_PLUGINDIR=/usr/local/lib/ts
-      sleep 3
-      echo "Please follow the instructions on the display..."
-      ts_calibrate
-      sudo start uimapper
-      sudo start kodi
+    else
+    echo "Already installed... Recalibrating"
+    sudo stop kodi
+    sudo stop uimapper
+    export LD_LIBRARY_PATH=/usr/local/lib
+    export TSLIB_CONSOLEDEVICE=none
+    export TSLIB_FBDEVICE=/dev/fb0
+    export TSLIB_TSDEVICE=/dev/input/touchscreen
+    export TSLIB_CALIBFILE=/etc/pointercal
+    export TSLIB_CONFFILE=/usr/local/etc/ts.conf
+    export TSLIB_PLUGINDIR=/usr/local/lib/ts
+    sleep 3
+    echo "Please follow the instructions on the display..."
+    ts_calibrate
+    sudo start uimapper
+    sudo start kodi
 
 
 
