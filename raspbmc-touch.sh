@@ -18,7 +18,7 @@ fi
 
   if [ ! -f /etc/pointercal ];
   then
-    sudo stop xbmc
+    sudo stop kodi
     echo "Getting tslib"
     wget --no-check -O tslib_1-1_armhf.deb "https://github.com/Schlump/raspbmc-touch/raw/master/tslib_1-1_armhf.deb"
     echo "Installing tslib"
@@ -53,23 +53,26 @@ fi
     end script
     respawn" >> uimapper.conf
     echo "Moving config..."
-    echo "Adding stuff too /boot/config.txt"
-    echo "hdmi_group=1"  >> /boot/config.txt
-    echo "hdmi_mode=4"  >> /boot/config.txt
-    sudo mv uimapper.conf /etc/init
-    sudo chmod +x /scripts/uinput-mapper/input-create.py
-    sudo chmod +x /scripts/uinput-mapper/input-read.py
-    echo "Cleaning up..."
-    rm uimapper.tar.gz
-    rm tslib_1-1_armhf.deb > /dev/null #Silent error
-    sudo start uimapper
-    sudo start xbmc
-    echo "Installation done!"
+      if grep -Fxq "hdmi_group=1" /boot/config.txt
+      then
+      echo "Adding stuff too /boot/config.txt"
+      echo "hdmi_group=1"  >> /boot/config.txt
+      echo "hdmi_mode=4"  >> /boot/config.txt
+      else
+      sudo mv uimapper.conf /etc/init
+      sudo chmod +x /scripts/uinput-mapper/input-create.py
+      sudo chmod +x /scripts/uinput-mapper/input-read.py
+      echo "Cleaning up..."
+      rm uimapper.tar.gz
+      rm tslib_1-1_armhf.deb > /dev/null #Silent error
+      sudo start uimapper
+      sudo start kodi
+      echo "Installation done!"
 
 
       else
       echo "Already installed... Recalibrating"
-      sudo stop xbmc
+      sudo stop kodi
       sudo stop uimapper
       export LD_LIBRARY_PATH=/usr/local/lib
       export TSLIB_CONSOLEDEVICE=none
@@ -82,7 +85,10 @@ fi
       echo "Please follow the instructions on the display..."
       ts_calibrate
       sudo start uimapper
-      sudo start xbmc
+      sudo start kodi
+
+
+
 
 
 fi
